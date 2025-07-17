@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrunali Mali | Web Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+<!-- Floating Sidebar -->
+<div class="fixed top-1/2 left-0 transform -translate-y-1/2 z-50">
+  <ul class="space-y-3 bg-white dark:bg-gray-800 px-2 py-4 shadow rounded-r-xl">
+    <li><a href="#hero" title="Home" class="block w-8 h-8 text-blue-600 hover:text-blue-800 dark:hover:text-blue-400">
+      🏠
+    </a></li>
+    <li><a href="#about" title="About" class="block w-8 h-8 text-blue-600 hover:text-blue-800 dark:hover:text-blue-400">
+      🙋‍♂️
+    </a></li>
+    <li><a href="#projects" title="Projects" class="block w-8 h-8 text-blue-600 hover:text-blue-800 dark:hover:text-blue-400">
+      💼
+    </a></li>
+    <li><a href="#skills" title="Skills" class="block w-8 h-8 text-blue-600 hover:text-blue-800 dark:hover:text-blue-400">
+      🧠
+    </a></li>
+  </ul>
+</div>
+
+<!-- Header -->
+<header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-40">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Logo" class="h-9 w-9 rounded object-contain">
+      <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400">Portfolio</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <nav class="space-x-6 hidden sm:block">
+        <a href="#hero" class="hover:text-blue-500">Home</a>
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+      </nav>
+    <button id="darkToggle" class="relative w-14 h-8 rounded-full bg-gray-300 dark:bg-gray-600 transition duration-300 flex items-center px-1 focus:outline-none">
+      <span class="absolute left-1 top-1 w-6 h-6 rounded-full bg-white dark:bg-gray-100 shadow-md transform transition-transform duration-300" id="toggleCircle"></span>
+      <span class="ml-auto mr-1 text-sm text-yellow-500 dark:text-gray-300" id="toggleIcon">🌞</span>
+    </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="py-24 bg-gradient-to-br from-blue-100 via-white to-purple-100 dark:from-gray-800 dark:to-gray-900">
+  <div class="max-w-5xl mx-auto px-6 text-center" data-aos="fade-up">
+    <h2 id="typewriter" class="text-5xl font-extrabold text-blue-700 dark:text-blue-400 mb-4"></h2>
+    <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+      A front-end web developer passionate about building responsive, user-friendly websites using HTML, Tailwind CSS, and JavaScript.
+    </p>
+    <div class="mt-8">
+      <a href="#projects" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition">View My Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <div class="max-w-4xl mx-auto px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-4 text-center">About Me</h2>
+    <p class="text-center text-gray-700 dark:text-gray-300">
+      I'm Mrunali Mali, a creative front-end developer who enjoys building beautiful and functional user interfaces. I value clean code, responsive design, and seamless user experiences.
+    </p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-white dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Projects</h3>
+    <div class="flex justify-center">
+      <div class="w-full sm:w-96 bg-white dark:bg-gray-700 rounded-xl shadow-md hover:shadow-xl transition p-6 text-center">
+        <img src="https://img.freepik.com/free-vector/flat-design-developer-concept_23-2148817992.jpg" class="rounded-md mb-4 w-full h-52 object-cover" alt="project">
+        <h4 class="text-xl font-semibold mb-2">Responsive Web Design</h4>
+        <p class="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+          Created using HTML, Tailwind CSS, and JavaScript to build mobile-first layouts.
+        </p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 text-xs font-semibold px-3 py-1 rounded-full">HTML</span>
+          <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 text-xs font-semibold px-3 py-1 rounded-full">Tailwind CSS</span>
+          <span class="bg-gray-200 text-gray-800 dark:bg-gray-600 dark:text-gray-100 text-xs font-semibold px-3 py-1 rounded-full">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-8">Skills & Tools</h3>
+    <div class="flex flex-wrap justify-center gap-3">
+      <span class="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-4 py-2 text-sm rounded-full font-medium transform transition hover:scale-105 hover:shadow-md">HTML5</span>
+      <span class="bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200 px-4 py-2 text-sm rounded-full font-medium transform transition hover:scale-105 hover:shadow-md">JavaScript</span>
+      <span class="bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 px-4 py-2 text-sm rounded-full font-medium transform transition hover:scale-105 hover:shadow-md">Tailwind CSS</span>
+      <span class="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 px-4 py-2 text-sm rounded-full font-medium transform transition hover:scale-105 hover:shadow-md">Responsive Design</span>
+      <span class="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 px-4 py-2 text-sm rounded-full font-medium transform transition hover:scale-105 hover:shadow-md">Git & GitHub</span>
+      <span class="bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200 px-4 py-2 text-sm rounded-full font-medium transform transition hover:scale-105 hover:shadow-md">CSS</span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-6 bg-white dark:bg-gray-800">
+  <button id="backToTop" class="hidden fixed bottom-5 right-5 p-3 bg-blue-700 text-white rounded-full shadow-lg hover:bg-blue-800">
+    <i class="fas fa-arrow-up"></i>
+</button>
+  <p class="text-sm text-gray-600 dark:text-gray-400">&copy; 2025 Mrunali Mali. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+
+  AOS.init();
+const toggleBtn = document.getElementById("darkToggle");
+  const toggleIcon = document.getElementById("toggleIcon");
+  const toggleCircle = document.getElementById("toggleCircle");
+  const root = document.documentElement;
+
+  // Load user preference or system preference
+  if (
+    localStorage.getItem("theme") === "dark" ||
+    (!localStorage.getItem("theme") &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    root.classList.add("dark");
+    toggleIcon.innerText = "🌙";
+    toggleCircle.style.transform = "translateX(24px)";
+  }
+
+  // Toggle on click
+  toggleBtn.addEventListener("click", () => {
+    root.classList.toggle("dark");
+    if (root.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+      toggleIcon.innerText = "🌙";
+      toggleCircle.style.transform = "translateX(24px)";
+    } else {
+      localStorage.setItem("theme", "light");
+      toggleIcon.innerText = "🌞";
+      toggleCircle.style.transform = "translateX(0px)";
+    }
+  });
+  // Typewriter Effect
+  const text = "Hi, I'm Mrunali Mali";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+window.addEventListener("DOMContentLoaded", typeWriter);
+
+const btn = document.getElementById("backToTop");
+window.onscroll = function () {
+  btn.style.display = window.scrollY > 300 ? "block" : "none";
+};
+btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+</script>
+</body>
+</html>
