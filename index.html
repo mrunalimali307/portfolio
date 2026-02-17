@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrunali Mali | Frontend Developer</title>
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Portfolio<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text reveal">
+                <span class="subtitle">Hi, I'm</span>
+                <h1 class="title">Mrunali Mukund Mali</h1>
+                <h2 class="role">I am <span class="typing-text"></span></h2>
+                <p class="description">
+                    Passionate about building beautiful, responsive, and user-friendly web interfaces.
+                    Merging code with creativity to deliver seamless digital experiences.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/mrunalimali307" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mrunali-mali-25607a326?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="image-wrapper">
+                    <img src="profile.jpeg" alt="Mrunali Mali Profile Photo" class="profile-pic">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">About Me</h2> <br>
+                <span class="section-subtitle">My Journey</span>
+            </div>
+
+            <div class="about-grid reveal">
+                <div class="about-bio">
+                    <h3>Curious & Dedicated</h3>
+                    <p style="max-width: 90%;">
+                        I am a passionate <strong>Frontend Developer</strong> with a knack for crafting visually
+                        stunning and highly functional web applications. My journey began with a simple curiosity for
+                        how websites work, which has now evolved into a career path fueled by continuous learning.
+                    </p>
+                    <p style="max-width: 90%;">
+                        Currently pursuing my <strong>MCA</strong>, I bridge the gap between design and engineering. I
+                        strive to write clean, maintainable code and am always eager to adopt the latest web
+                        technologies.
+                    </p>
+                </div>
+
+                <div class="education-cards-wrapper">
+
+                    <div class="education-card">
+                        <div class="edu-icon-box">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-details">
+                            <h4 class="edu-title">Master of Computer Applications</h4>
+                            <p class="institution">KBC North Maharashtra University</p>
+                            <span class="edu-status status-pursuing">Pursuing</span>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="edu-icon-box">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-details">
+                            <h4 class="edu-title">Bachelor of Computer Applications</h4>
+                            <p class="institution">KBC North Maharashtra University</p>
+                            <span class="edu-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My Skills</h2> <br>
+                <span class="section-subtitle">Technical Proficiency</span>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon html"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon css"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js skill-icon js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon dbms"></i>
+                    <h3>DBMS</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My Projects</h2> <br>
+                <span class="section-subtitle">Recent Work</span>
+            </div>
+            <div class="projects-grid reveal">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/project-2.png" alt="Portfolio Website">
+                    </div>
+                    <div class="project-info">
+                        <h3> Employee Leave Management System </h3>
+                        <p>A modern, responsive web application for managing employee leave requests, approvals, and
+                            tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                        <div class="project-links">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <img src="/project-3.png" alt="Task Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Music Player</h3>
+                        <p>A productivity application to manage daily tasks with local storage persistence.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mrunali-music.netlify.app/" class="btn btn-sm btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Get In Touch</h2> <br>
+                <span class="section-subtitle">Let's Work Together</span>
+            </div>
+
+            <div class="contact-glass-container reveal">
+                <div class="contact-info-column">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>mrunali307@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jalgaon, Maharashtra</span>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <a href="https://github.com/mrunalimali307">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mrunali-mali-25607a326?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form-modern">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Mrunali Mali. Designed & Built with <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
